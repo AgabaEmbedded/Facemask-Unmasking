@@ -13,7 +13,7 @@ from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
 from tensorflow.keras.utils import CustomObjectScope
 from utils.face_detection import get_face_keypoints_detecting_function, crop_face, get_crop_points
 from utils.architectures import UNet
-from tensorflow.keras.losses import MeanSquaredError, mean_squared_error
+from tensorflow.keras.losses import MeanSquaredError, mse
 
 
 class Mask2FaceModel(tf.keras.models.Model):
